@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 body {
-  background-color: #e8eaea;
+  background-color: #e0d2b8;
   text-align: center;
-  font-family: 'Varela Round', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Arial;
   color: #4a4b4b;
   font-size: 16px;
 }
@@ -11,6 +11,7 @@ body {
 h1 {
   display: inline-block; /* Ajoute cette ligne pour que le background soit autour du texte */
   font-size: 40px;
+  font-family: 'Varela Round', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
   margin: 5px 0 20px 0;
@@ -22,6 +23,7 @@ h1 {
 
 h2 {
   font-size: 1.4em;
+  font-family: 'Varela Round', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: 0.1rem;
   margin-bottom: 1.6em;
 }
@@ -146,10 +148,8 @@ ul li i {
 }
 
 .logo-container {
-  position: sticky;
   top: 0;
   z-index: 1000; /* Assurez-vous que le logo reste au-dessus des autres éléments */
-  background-color: #e8eaea; /* Couleur de fond pour éviter que le texte passe sous le logo */
 }
 
 .sticky-logo {
@@ -263,7 +263,6 @@ ul li i {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #e8eaea; /* Couleur de fond pour éviter que le texte passe sous le logo */
   padding: 10px;
   z-index: 1000; /* Assurez-vous que le logo reste au-dessus des autres éléments */
 }
