@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+body {
+  background-color: #e8eaea;
+  text-align: center;
+  font-family: 'Varela Round', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4a4b4b;
+  font-size: 16px;
+}
+
+h1 {
+  display: inline-block; /* Ajoute cette ligne pour que le background soit autour du texte */
+  font-size: 40px;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  margin: 5px 0 20px 0;
+  background-color: #6baaaa;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px 5px; /* Ajoute du padding pour un meilleur rendu */
+}
+
+h2 {
+  font-size: 1.4em;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.6em;
+}
+
+p {
+  margin: 0 auto 0 auto;
+  color: #4a4b4b;
+  font-size: 18px;
+  line-height: 1.5em;
+  max-width: 680px; /* Ajoute une largeur maximale pour les paragraphes */
+  text-align: justify;
+}
+
+.illustration {
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+}
+
+ul.social {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul.social li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.text-green-highlight {
+  color: #6baaaa;
+  font-weight: bold;
+}
+
+ul.social li a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  margin-right: 1em;
+  font-size: 1.2em;
+  line-height: 48px;
+  border-radius: 499em;
+  color: #313131;
+  margin-bottom: 0.5em;
+}
+
+ul.social li a:hover {
+  color: #fff;
+  background: #35c2be;
+}
+
+.container {
+  max-width: 1000px; /* Limite la largeur à 1200px */
+  margin: 0 auto 20px auto; /* Centre la section */
+  padding: 0 20px; /* Ajoute un peu de padding sur les côtés */
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-tile {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33.333% - 40px); /* 3 colonnes avec un espace de 20px entre chaque tuile */
+  box-sizing: border-box;
+}
+
+.service-tile i {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.service-tile h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.service-tile p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.container {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none; /* Supprime les puces par défaut */
+  padding: 0;
+  margin: 20px auto; /* Centre la liste */
+  max-width: 680px; /* Limite la largeur de la liste pour correspondre aux paragraphes */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+  gap: 20px; /* Espace entre les éléments de la liste */
+}
+
+ul li {
+  margin: 10px 0; /* Espace entre les éléments de la liste */
+  padding: 10px 15px; /* Padding à l'intérieur des éléments de la liste */
+  display: flex; /* Utilisation de flexbox pour aligner les éléments */
+  align-items: center; /* Aligne les éléments verticalement au centre */
+  text-align: left;
+  color: #4a4b4b;
+}
+
+ul li i {
+  margin-right: 10px; /* Ajustez cette valeur selon vos besoins */
+  font-size: 30px;
+}
+
+.logo-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Assurez-vous que le logo reste au-dessus des autres éléments */
+  background-color: #e8eaea; /* Couleur de fond pour éviter que le texte passe sous le logo */
+}
+
+.sticky-logo {
+  max-width: 300px; /* Taille initiale du logo */
+  transition: width 0.3s ease; /* Transition pour le redimensionnement */
+}
+
+.logo-container .illustration {
+  width: 100%; /* Le logo prendra toute la largeur de son conteneur */
+  max-width: 700px; /* Taille maximale du logo */
+  height: auto; /* Maintient le ratio d'aspect */
+}
+
+.tarifs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+  gap: 20px; /* Espace entre les colonnes */
+  align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
+.tarifs-text {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.tarifs-image img {
+  max-width: 100%;
+  border-radius: 8px; /* Ajoute des coins arrondis à l'image */
+}
+
+@media only screen and (max-width: 1020px) {
+  body {
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  h1 {
+    font-size: 2.6em;
+  }
+  h2 {
+    font-size: 1.2em;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2em;
+  }
+  p {
+    max-width: 680px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding-top: 1.6em;
+  }
+  h1 {
+    font-size: 2.2em;
+    letter-spacing: 0.2rem;
+  }
+  h2 {
+    font-size: 1.1em;
+    letter-spacing: 0.2rem;
+  }
+  p {
+    margin-top: 1.5em;
+    font-size: 1em;
+  }
+  ul.social li a {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1em;
+    line-height: 39px;
+    margin-right: 0.5em;
+  }
+  ul {
+    grid-template-columns: 1fr; /* Une seule colonne */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 0.9em;
+  }
+  p {
+    margin-top: 1.5em;
+    font-size: 0.9em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+/* Media queries pour rendre la page responsive */
+@media (max-width: 992px) {
+  .service-tile {
+    width: calc(50% - 40px); /* 2 colonnes avec un espace de 20px entre chaque tuile */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-tile {
+    width: calc(100% - 40px); /* 1 colonne avec un espace de 20px entre chaque tuile */
+  }
+}
+
+.logo-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e8eaea; /* Couleur de fond pour éviter que le texte passe sous le logo */
+  padding: 10px;
+  z-index: 1000; /* Assurez-vous que le logo reste au-dessus des autres éléments */
+}
+
+.small-logo {
+  width: 300px; /* Taille réduite du logo */
+  height: auto; /* Maintient le ratio d'aspect */
+}
