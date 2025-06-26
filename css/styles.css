@@ -84,36 +84,120 @@ ul.social li a:hover {
   padding: 0 20px; /* Ajoute un peu de padding sur les côtés */
 }
 
+/* Amélioration de la grille des services */
 .services-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0;
 }
 
-.service-tile {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
+/* Remplacement des service-tile par service-card */
+.service-card {
+  background: #ffffff;
+  border: 2px solid #e0d2b8;
+  border-radius: 12px;
+  padding: 2rem;
   text-align: center;
-  width: calc(33.333% - 40px); /* 3 colonnes avec un espace de 20px entre chaque tuile */
-  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.service-tile i {
-  font-size: 2em;
-  margin-bottom: 10px;
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(107, 170, 170, 0.2);
+  border-color: #6baaaa;
 }
 
-.service-tile h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+.service-card:hover .service-icon i {
+  transform: scale(1.1);
+  color: #6baaaa;
 }
 
-.service-tile p {
-  font-size: 0.9em;
+.service-icon {
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-icon i {
+  font-size: 3rem;
+  color: #6baaaa;
+  transition: all 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #4a4b4b;
+  margin-bottom: 1rem;
+  font-family: 'Varela Round', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+.service-card p {
   color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  max-width: none;
+  text-align: center;
+}
+
+/* Suppression des anciens styles service-tile */
+.service-tile {
+  display: none;
+}
+
+/* Responsive pour les services */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .service-icon i {
+    font-size: 2.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 1.2rem;
+  }
+  
+  .service-icon i {
+    font-size: 2rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .service-card p {
+    font-size: 0.9rem;
+  }
 }
 
 .container {
